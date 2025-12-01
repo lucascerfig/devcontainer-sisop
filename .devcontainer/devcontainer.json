@@ -1,21 +1,21 @@
 {
-  "name": "Laboratório SO (xv6 + Python)",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-      },
-      "extensions": [
-        "ms-vscode.cpptools",    // Intellisense para C/C++
-        "ms-python.python",      // Suporte a Python para os simuladores do OSTEP
-        "donjayamanne.githistory" // Visualizar histórico do git (opcional, mas útil)
-      ]
-    }
-  },
-  // Script que roda logo após a máquina ser criada.
-  // Aqui você pode até mandar clonar o xv6 automaticamente se quiser.
-  "postCreateCommand": "echo 'Ambiente de Sistemas Operacionais pronto! Use make qemu para o xv6 ou python3 para o OSTEP.'"
+    "name": "Laboratório SO (xv6 + Python)",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-vscode.cpptools", // Intellisense para C/C++
+                "ms-python.python", // Suporte a Python para os simuladores do OSTEP
+                "donjayamanne.githistory" // Visualizar histórico do git (opcional, mas útil)
+            ]
+        }
+    },
+    // Script que roda logo após a máquina ser criada.
+    // Aqui você pode até mandar clonar o xv6 automaticamente se quiser.
+    "postCreateCommand": "echo 'Ambiente de Sistemas Operacionais pronto! Use make qemu para o xv6 ou python3 para o OSTEP.'"
 }
